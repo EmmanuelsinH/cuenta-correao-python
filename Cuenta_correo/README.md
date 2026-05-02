@@ -1,25 +1,32 @@
-# Cuenta de Correo en Python
+# CuentaCorreo (Python)
 
-Este proyecto es una implementación simple de una clase en Python que representa una cuenta de correo electrónico.
+Proyecto simple en Python que implementa una clase para representar una cuenta de correo electrónico con encapsulamiento de contraseña.
+
+---
 
 ## Descripción
 
-La clase CuentaCorreo permite gestionar una cuenta de correo, encapsulando la contraseña y controlando su acceso mediante propiedades. También incluye validaciones básicas para mejorar la seguridad de los datos.
+Este proyecto demuestra conceptos básicos de Programación Orientada a Objetos (POO) en Python, enfocándose en:
+
+- Encapsulamiento de atributos
+- Uso de propiedades (`@property`, setter y deleter)
+- Validación de datos
+- Control de acceso a atributos sensibles
+
+---
 
 ## Funcionalidades
 
-* Encapsulamiento de la contraseña
-* Uso de propiedades (@property, setter y deleter)
-* Validación de longitud mínima de la contraseña
-* Eliminación controlada de la contraseña
+- Crear una cuenta con email y contraseña
+- Validar longitud mínima de la contraseña
+- Modificar la contraseña de forma controlada
+- Eliminar la contraseña de manera segura
 
-## Tecnologías
-
-* Python
+---
 
 ## Ejemplo de uso
 
-Python
+```python
 c = CuentaCorreo("correo@mail.com", "123456")
 print(c.contrasena)
 
@@ -27,13 +34,16 @@ c.contrasena = "abcdef"
 print(c.contrasena)
 
 del c.contrasena
+```
 
+---
 
-## Aprendizajes
+## Objetivo del proyecto
 
-Este proyecto fue desarrollado para practicar conceptos de:
+Practicar conceptos fundamentales de POO en Python aplicados a un caso sencillo pero realista de manejo de datos sensibles.
 
-* Programación orientada a objetos (POO)
-* Encapsulamiento de datos
-* Uso de getters y setters en Python
-* Validación de atributos
+---
+
+## Tecnologías
+
+- Python 3
